@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form with Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="contact_form"><i>EMBARK YOUR JOURNEY WITH US</i></h1>
+    <div class="outer-container">
+      <div  class="inner-container1 text-heading">
+        <h1>HEY THERE!</b></h1>
+        <p><i><b>Embark on a transformative journey with us!</b></i> Your experience matters, and we invite you to join our community. Provide your personal information and connect with us in this exciting journey towards growth and success.
+             Together, we can create meaningful connections and build a future filled with opportunities. <b>"Your adventure awaits—join us now!"</b>
+        </p>
+        
+        <button type="submit">SIGN UP</button>
+    </div> 
+     
+
+    <form class="inner-container2" id="contact-form">
+            
+        <h1>LOGIN</b></h1>
+       
+        <div class=" form-control">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-control">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required  placeholder="Enter your valid email">
+            </div>
+
+
+            <p>FORGOT YOUR PASSWORD</p>
+        
+            <div id="error-message" class="error-message"></div>
+            <button type="submit">LOGIN</button>
+            <div id="success-message" class="success-message"></div>
+        </form>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
