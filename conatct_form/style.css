@@ -1,0 +1,305 @@
+*{padding: 0px; margin:0px;}
+
+:root{
+    --green: #3b8132;
+    --light-green: #52a447;
+    --light-color: #666;
+    --white:#cce7c9;
+}
+
+#contact{
+
+    height: 100vh;
+    width:100%;
+    background-image:url(assets/image_1\ \(2\).jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+#contact::before{
+
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.131);
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+
+h2{
+    color: var(--green);
+}
+
+  .main-container {
+    display: flex;
+    margin: 0 70px; /* Adjust the margin here */
+  }
+  
+  .sub-container {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 2.5px;
+  }
+  
+  .blue {
+    background-color:gray ;
+    color: white;
+    padding-top: 13px;
+    text-align: left;
+  }
+  
+  .pink {
+    background-color:rgb(50, 50, 50) ;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding-left: 10px;
+    padding-bottom:30px;
+    
+  }
+  
+  label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  input,
+  textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   transition: box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="text"] {
+    box-shadow: 0 0 5px rgba(6, 43, 82, 0.7); /* Add a blue shadow on focus */
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="text"]:hover,
+:focus
+ {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a lighter blue shadow on hover */
+}
+
+
+button {
+    border-radius: 10px;
+    background-color: var(--light-green);
+    color:var(--white);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+
+} 
+
+
+button:hover {
+
+    background-color:var(--green) ; 
+}
+
+
+
+h2{ 
+    margin-top:45px;
+    color:var(--white);
+    font-size: 28px;
+
+    
+
+}
+/* contact-list */
+
+#contact .main-container .sub-container .heading{
+    
+    font-size: 27px;
+    margin-top:40px;
+    color:var(--white);
+    margin-bottom: 20px;
+
+}
+  
+  .contact-list {
+    list-style: none;
+    
+  }
+  
+  .contact-list li {
+    color: #fff;
+    padding-top: 30px;
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+  
+  p{
+   
+    color: #fff;
+    font-size: 20px;
+  }
+  strong{
+    color: var(--green);
+   
+  }
+  span{
+    color: var(--white);
+  }
+  i {
+   color: var(--green);
+    font-size: 24px;
+    margin-right: 8px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+/* Tablet Media Query */
+@media only screen and (max-width: 1024px) {
+    .main-container {
+      flex-direction: column;
+      margin: 10px;
+    }
+  
+    .sub-container {
+      width: 100%;
+      margin: 0px;
+    }
+  
+    .blue, .pink {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .contact-list li {
+        padding-top: 15px;
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+    
+      form {
+        margin: 15px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+    
+      p {
+        font-size: 18px;
+      }
+    
+      button {
+        font-size: 16px;
+        padding: 8px 15px;
+      }
+    
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+      }
+  }
+  
+  /* Phone Media Query */
+  @media only screen and (max-width: 600px) {
+    .main-container {
+      flex-direction: column;
+      margin: 0;
+    }
+  
+    .sub-container {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .blue, .pink {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    form {
+      margin: 15px;
+    }
+  
+    .contact-list li {
+      padding-top: 15px;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 18px;
+    }
+  
+    button {
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+    }
+  }
+   
+
+
+
+
+
+
+
+
+
+
