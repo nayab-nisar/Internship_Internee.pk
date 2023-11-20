@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        .img_box img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .slider_container .container {
+            padding: 0 15px;
+            max-width: 1230px;
+            margin: 0 auto;
+        }
+
+        .card_slider {
+            padding: 230px 0;
+            position: relative; /* Add relative positioning for the navigation buttons */
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #fff; /* Set button color */
+            font-size: 5px;
+            position: absolute; /* Position buttons absolutely within the slider container */
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            z-index: 10;
+            padding: 0px;
+        }
+
+        .swiper-button-next {
+            right: 0px;
+            font-size: 5px;
+        }
+
+        .swiper-button-prev {
+            left: 0px;
+            font-size: 5px;
+        }
+
+        /* Adjust button styles for smaller screens */
+        @media (max-width: 768px) {
+            .swiper-button-next,
+            .swiper-button-prev {
+                font-size: 3px;
+                padding: 0px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<section class="slider_container">
+
+    <div class="container">
+        <div class="swiper card_slider">
+            <div class="swiper-wrapper">
+                <!-- image 1 -->
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img src="assets/background_home.png" alt="">
+                    </div>
+                </div>
+
+                <!-- image 2 -->
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img src="assets/background_home.png" alt="">
+                    </div>
+                </div><!-- image 3 -->
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img src="assets/background_home.png" alt="">
+                    </div>
+                </div><!-- image 4 -->
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img src="assets/background_home.png" alt="">
+                    </div>
+                </div><!-- image 5 -->
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img src="assets/background_home.png" alt="">
+                    </div>
+                </div><!-- image 6 -->
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img src="assets/background_home.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script type="text/javascript">
+    var swiper = new Swiper(".card_slider", {
+        loop: true,
+        speed: 1000,
+        autoplay: { delay: 2000, },
+
+        spaceBetween: 70,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 4,
+            },
+        },
+
+
+    });
+</script>
+
+</body>
+</html>
